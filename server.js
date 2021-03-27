@@ -5,8 +5,9 @@ const cors = require("cors");
 const app = express();
 //app.use(...);
 
-//const db = require("./app/models");
-//db.sequelize.sync();
+const db = require("./app/models");
+db.sequelize.sync();
+
 
 
 var corsOptions = {
@@ -25,6 +26,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) => {
     res.json({message: "Welcome to bezkoder application"});
 });
+
+require("./app/routes/tutorial.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
