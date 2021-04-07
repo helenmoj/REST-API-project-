@@ -1,10 +1,17 @@
 REST-API-project-
 Node.js Rest APIs example with Express, Sequelize &amp; MySQL
 
-NOTE, need to tidy up readme
+CONTENTS OF THIS FILE
+---------------------
+
+ * Introduction
+
+I followed the following tutorial: https://bezkoder.com/vue-js-node-js-express-mysql-crud-example/
 
 Express is one of the most popular web frameworks for Node.js that supports routing, middleware, view system… Sequelize is a promise-based Node.js ORM that supports the dialects for Postgres, MySQL, SQL Server… In this tutorial, I will show you step by step to build Node.js Restful CRUD API using Express, Sequelize with MySQL database.
-
+ * Requirements
+ * Recommended modules
+ * Installation:
 
 Run our Node.js application with command: node server.js.
 The console shows:
@@ -20,9 +27,7 @@ Using Postman, we’re gonna test all the Apis above.
 
 {
 "title": JS: Node Tut #1,
-"description": "Tut#1 Description"
-}
-
+"description": "Tut#1 Description" }
 
 - Retrieve all Tutorials using GET /tutorials Api
 
@@ -59,4 +64,13 @@ mysql> select * from tutorials;
 - Delete a Tutorial using DELETE /tutorials/:id Api
 
 - Delete all Tutorials using DELETE /tutorials Api
+
+
+ * Configuration:
+
+
+
+
+
+
 
